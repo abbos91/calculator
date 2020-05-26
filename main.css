@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator {
+    flex: 0 0 95%;
+}
+
+.screen {
+    width: 100%;
+    font-size: 7rem;
+    padding: .5rem;
+    color: white;
+    background-color: rgb(41, 41, 56);
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -ms-transition: all .5s linear;
+    -o-transition: all .5s linear;
+}
+
+button {
+    flex: 0 0 25%;
+    border: 1px solid black;
+    padding: .25rem;
+    transition: all 2s ease;
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    -o-transition: all 2s ease;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+.btn-yellow {
+    background: rgb(245, 146, 62);
+    color: white;
+}
+
+.btn-grey {
+    background: rgb(224, 224, 224);
+}
+
+.btn, .btn-equal, .btn-clear {
+    font-size: 4rem;
+}
+
+.btn-equal {
+    background: green;
+}
+
+.btn-clear {
+    background: red;
+}
+
